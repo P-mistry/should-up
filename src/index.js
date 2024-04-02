@@ -12,7 +12,7 @@
 // License for the specific language governing permissions and limitations under
 // the License.
 
-const replacements = require('./replacements');
+const indentRegex = new RegExp(`^([ \\t]*)it\\(['"]`, 'gm');
 
 function convert(input) {
   let output = input;
